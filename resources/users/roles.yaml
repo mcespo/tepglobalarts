@@ -35,6 +35,7 @@ admin:
     - 'assign roles'
     - 'edit user groups'
     - 'edit roles'
+    - 'impersonate users'
     - 'view updates'
     - 'configure forms'
     - 'access cache utility'

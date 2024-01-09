@@ -1,5 +1,6 @@
 name: 'Flavia Andrade'
 roles:
   - admin
+super: true
 id: 1c52a7da-3261-4725-b4e9-e60a7c557c4c
 password_hash: $2y$10$ReiOwjMqWX9zWvZZPRBxH./KH94NdAWoa7a1nQmvJGYbQAO7mAVgS

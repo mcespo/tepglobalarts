@@ -1,4 +1,7 @@
 title: Landing
+sites:
+- en
+- br
 tabs:
   main:
     display: Main

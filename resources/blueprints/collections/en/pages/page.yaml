@@ -1,4 +1,7 @@
 title: Page
+sites:
+- en
+- pt-br
 tabs:
   main:
     sections:

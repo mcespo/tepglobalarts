@@ -3,7 +3,7 @@ id: home
 blueprint: landing
 sites:
 - en
-- br
+- pt-br
 title: Home
 template: landing
 author: 73686ab2-fd43-4959-9059-d98159f3ec3f

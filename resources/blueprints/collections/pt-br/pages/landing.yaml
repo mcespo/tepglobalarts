@@ -7,7 +7,7 @@ tabs:
     display: Main
     sections:
       -
-        display: 'Header Area'
+        display: 'Header Area BR'
         fields:
           -
             handle: title

@@ -1,8 +1,0 @@
-title: Landing
-sites:
-  - pt-br
-propagate: false
-revisions: false
-date_behavior:
-  past: public
-  future: private

@@ -1,5 +1,155 @@
 title: Landing
+sites:
+- en
+- pt-br
 tabs:
   main:
     display: Main
-    fields: {  }
+    sections:
+      -
+        display: 'Header Area'
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              width: 33
+              validate:
+                - required
+          -
+            handle: hero_image
+            field:
+              max_files: 1
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Hero Image'
+              icon: assets
+              width: 66
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: header
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Header
+              icon: text
+              width: 66
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: header_color
+            field:
+              allow_any: true
+              type: color
+              display: 'Header Color'
+              icon: color
+              width: 33
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: sub_header
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Sub Header'
+              icon: text
+              width: 66
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: sub_header_color
+            field:
+              allow_any: true
+              type: color
+              display: 'Sub Header Color'
+              icon: color
+              width: 33
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: content
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+              smart_typography: false
+              save_html: false
+              inline: false
+              toolbar_mode: fixed
+              reading_time: false
+              word_count: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              remove_empty_nodes: false
+              antlers: false
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
+              display: Content
+              icon: bard
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: 'New Section'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

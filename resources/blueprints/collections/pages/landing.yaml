@@ -1,7 +1,7 @@
 title: Landing
 sites:
-- en
-- pt-br
+  - en
+  - pt-br
 tabs:
   main:
     display: Main
@@ -37,6 +37,7 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              localizable: false
           -
             handle: header
             field:
@@ -65,6 +66,7 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              localizable: false
           -
             handle: sub_header
             field:
@@ -93,6 +95,7 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              localizable: false
           -
             handle: content
             field:
@@ -135,8 +138,6 @@ tabs:
               replicator_preview: true
               hide_display: false
               localizable: true
-      -
-        display: 'New Section'
   sidebar:
     display: Sidebar
     sections:

@@ -5,8 +5,9 @@ title: Home
 template: home
 author: 73686ab2-fd43-4959-9059-d98159f3ec3f
 updated_by: 73686ab2-fd43-4959-9059-d98159f3ec3f
-updated_at: 1705125425
+updated_at: 1705125440
 header: 'THIS IS HEADER'
+header_color: '#eba000'
 content:
   -
     type: paragraph

@@ -1,9 +1,0 @@
-title: Pagez
-sites:
-  - en
-  - pt-br
-propagate: false
-revisions: false
-date_behavior:
-  past: public
-  future: private

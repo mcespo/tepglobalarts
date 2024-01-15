@@ -16,12 +16,32 @@ tabs:
           -
             handle: header_title
             field:
-              input_type: text
+              buttons:
+                - removeformat
+                - anchor
+                - color
+              smart_typography: false
+              save_html: false
+              inline: false
+              toolbar_mode: fixed
+              reading_time: false
+              word_count: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              remove_empty_nodes: false
               antlers: false
-              type: text
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
               display: 'Header Title'
-              icon: text
-              localizable: true
+              icon: bard
+              localizable: false
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -40,8 +60,6 @@ tabs:
                 - removeformat
                 - quote
                 - anchor
-                - image
-                - table
                 - color
               smart_typography: false
               save_html: false

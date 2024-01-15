@@ -1,9 +1,29 @@
-{{ responsive:hero_image }}
-<article class="grid grid-flow-row gap-y-6">
-    {{ responsive:logo }}
-    <h1 class="text-2xl font-bold">{{ header_title }}</h1>
-    {{ content }}
-</article>
-<footer>
-    
-</footer>
+<section class="grid grid-flow-row lg:grid-cols-[2fr_1.35fr] lg:gap-x-8">
+    {{ responsive:hero_image }}
+    <article class="flex flex-col gap-y-6 lg:[grid-area:1/1/2/2] max-w-prose mt-10 lg:mt-4 px-8">
+        {{ responsive:logo class="w-96" }}
+        <h1 class="text-2xl font-bold">{{ header_title }}</h1>
+        {{ content }}
+        <aside class="flex justify-end">
+            {{ header_sponsors }}
+                {{ responsive:header_sponsor_logo class="justify-self-end w-40" }}
+            {{ /header_sponsors }}
+        </aside>
+    </article>
+</section>
+<section class="divider">
+    <div class="grid grid-cols-{{ divider_image_stack | count }}">
+        {{ divider_image_stack }}
+            {{ responsive:divider_image class="w-full object-cover h-fit" }}
+        {{ /divider_image_stack }}
+    </div>
+    <aside class="grid grid-flow-row lg:grid-cols-[3fr_1.5fr] lg:gap-x-8">
+        <div class="flex flex-col gap-y-6 max-w-prose px-8 mt-8">
+            {{ aside_sponsors }}
+                {{ responsive:aside_sponsor_logo class="w-24" }}
+            {{ /aside_sponsors }}
+            {{ aside_content }}
+        </div>
+        {{ responsive:aside_hero }}
+    </aside>
+</section>

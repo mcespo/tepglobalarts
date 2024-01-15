@@ -4,6 +4,7 @@ tabs:
     sections:
       -
         display: 'Header Area'
+        instructions: 'Top Header and main content'
         fields:
           -
             handle: title
@@ -13,6 +14,24 @@ tabs:
               localizable: false
               validate:
                 - required
+          -
+            handle: hero_image
+            field:
+              use_breakpoints: true
+              allow_ratio: true
+              allow_fit: true
+              container: assets
+              restrict: false
+              allow_uploads: true
+              type: responsive
+              display: 'Hero Image'
+              icon: assets
+              localizable: false
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
           -
             handle: logo
             field:
@@ -107,28 +126,7 @@ tabs:
               replicator_preview: true
               hide_display: false
           -
-            handle: hero_image
-            field:
-              use_breakpoints: true
-              allow_ratio: true
-              allow_fit: true
-              container: assets
-              restrict: false
-              allow_uploads: true
-              type: responsive
-              display: 'Hero Image'
-              icon: assets
-              localizable: false
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-      -
-        display: 'Footer Section'
-        fields:
-          -
-            handle: footer_image_stack
+            handle: header_sponsors
             field:
               collapse: false
               previews: true
@@ -145,16 +143,21 @@ tabs:
                       icon: null
                       fields:
                         -
-                          handle: image
+                          handle: header_sponsor_logo
                           field:
                             use_breakpoints: true
                             allow_ratio: true
                             allow_fit: true
-                            container: assets
+                            breakpoints:
+                              - sm
+                              - md
+                              - lg
+                              - xl
+                              - 2xl
                             restrict: false
                             allow_uploads: true
                             type: responsive
-                            display: Image
+                            display: 'Header Sponsor Logo'
                             icon: assets
                             localizable: false
                             listable: hidden
@@ -163,8 +166,178 @@ tabs:
                             replicator_preview: true
                             hide_display: false
               type: replicator
-              display: 'Footer Image Stack'
+              display: 'Header Sponsors'
               icon: replicator
+              localizable: false
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: 'Aside Section'
+        instructions: 'Additional Images and sponsor details'
+        fields:
+          -
+            handle: divider_image_stack
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    divider_set:
+                      display: 'Divider Set'
+                      instructions: null
+                      icon: media-image-camera
+                      fields:
+                        -
+                          handle: divider_image
+                          field:
+                            use_breakpoints: false
+                            allow_ratio: false
+                            allow_fit: true
+                            container: assets
+                            restrict: false
+                            allow_uploads: true
+                            type: responsive
+                            display: 'Divider Image'
+                            icon: assets
+                            localizable: false
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            breakpoints:
+                              - sm
+                              - md
+                              - lg
+                              - xl
+                              - 2xl
+              type: replicator
+              display: 'Divider Image Stack'
+              icon: replicator
+              localizable: false
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              instructions: 'this is a three (or more stack of images that separates top content area from the bottom sponsor content'
+          -
+            handle: aside_sponsors
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: aside_sponsor_logo
+                          field:
+                            use_breakpoints: false
+                            allow_ratio: false
+                            allow_fit: true
+                            breakpoints:
+                              - sm
+                              - md
+                              - lg
+                              - xl
+                              - 2xl
+                            restrict: false
+                            allow_uploads: true
+                            type: responsive
+                            display: 'Aside Sponsor Logo'
+                            icon: assets
+                            localizable: false
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+              type: replicator
+              display: 'Aside Sponsors'
+              icon: replicator
+              localizable: false
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: aside_content
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - color
+              smart_typography: false
+              save_html: false
+              inline: false
+              toolbar_mode: fixed
+              reading_time: false
+              word_count: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              remove_empty_nodes: false
+              antlers: false
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
+              display: 'Aside Content'
+              icon: bard
+              localizable: true
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: aside_hero
+            field:
+              use_breakpoints: false
+              allow_ratio: false
+              allow_fit: true
+              breakpoints:
+                - sm
+                - md
+                - lg
+                - xl
+                - 2xl
+              restrict: false
+              allow_uploads: true
+              type: responsive
+              display: 'Aside Hero'
+              icon: assets
               localizable: false
               listable: hidden
               instructions_position: above

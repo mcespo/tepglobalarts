@@ -141,15 +141,15 @@ tabs:
                   instructions: null
                   icon: null
                   sets:
-                    new_set:
-                      display: 'New Set'
+                    divider_set:
+                      display: 'Divider Set'
                       instructions: null
-                      icon: null
+                      icon: media-image-camera
                       fields:
                         -
                           handle: divider_image
                           field:
-                            use_breakpoints: true
+                            use_breakpoints: false
                             allow_ratio: true
                             allow_fit: true
                             container: assets
@@ -170,6 +170,20 @@ tabs:
                               - lg
                               - xl
                               - 2xl
+                        -
+                          handle: test
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: Test
+                            icon: text
+                            localizable: false
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
               type: replicator
               display: 'Divider Image Stack'
               icon: replicator

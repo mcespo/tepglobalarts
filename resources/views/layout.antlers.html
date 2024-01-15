@@ -8,11 +8,11 @@
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
     </head>
     <body class="bg-black text-white">
-        <main class="max-w-prose p-4 mx-auto lg:max-w-screen-xl">
+        <main class="max-w-prose mx-auto lg:max-w-screen-xl">
             {{ template_content }}
         </main>
-        <footer>
-            <p class="text-xs text-center">&copy; {{ now|format:Y }} {{ site:name }}, Inc. All rights reserved.</p>
+        <footer class="mt-6">
+            <p class="text-xs text-center p-4">&copy; {{ now|format:Y }} {{ site:name }}, Inc. All rights reserved.</p>
         </footer>
     </body>
 </html>

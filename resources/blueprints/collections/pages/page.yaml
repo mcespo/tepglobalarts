@@ -21,7 +21,7 @@ tabs:
               type: text
               display: 'Header Title'
               icon: text
-              localizable: false
+              localizable: true
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -63,7 +63,7 @@ tabs:
               type: bard
               display: Content
               icon: bard
-              localizable: false
+              localizable: true
               listable: hidden
               instructions_position: above
               visibility: visible

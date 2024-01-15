@@ -15,6 +15,24 @@ tabs:
               validate:
                 - required
           -
+            handle: hero_image
+            field:
+              use_breakpoints: true
+              allow_ratio: true
+              allow_fit: true
+              container: assets
+              restrict: false
+              allow_uploads: true
+              type: responsive
+              display: 'Hero Image'
+              icon: assets
+              localizable: false
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
             handle: logo
             field:
               use_breakpoints: true
@@ -108,17 +126,48 @@ tabs:
               replicator_preview: true
               hide_display: false
           -
-            handle: hero_image
+            handle: header_sponsors
             field:
-              use_breakpoints: true
-              allow_ratio: true
-              allow_fit: true
-              container: assets
-              restrict: false
-              allow_uploads: true
-              type: responsive
-              display: 'Hero Image'
-              icon: assets
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: header_sponsor_logo
+                          field:
+                            use_breakpoints: true
+                            allow_ratio: true
+                            allow_fit: true
+                            breakpoints:
+                              - sm
+                              - md
+                              - lg
+                              - xl
+                              - 2xl
+                            restrict: false
+                            allow_uploads: true
+                            type: responsive
+                            display: 'Header Sponsor Logo'
+                            icon: assets
+                            localizable: false
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+              type: replicator
+              display: 'Header Sponsors'
+              icon: replicator
               localizable: false
               listable: hidden
               instructions_position: above
@@ -150,7 +199,7 @@ tabs:
                           handle: divider_image
                           field:
                             use_breakpoints: false
-                            allow_ratio: true
+                            allow_ratio: false
                             allow_fit: true
                             container: assets
                             restrict: false
@@ -170,20 +219,6 @@ tabs:
                               - lg
                               - xl
                               - 2xl
-                        -
-                          handle: test
-                          field:
-                            input_type: text
-                            antlers: false
-                            type: text
-                            display: Test
-                            icon: text
-                            localizable: false
-                            listable: hidden
-                            instructions_position: above
-                            visibility: visible
-                            replicator_preview: true
-                            hide_display: false
               type: replicator
               display: 'Divider Image Stack'
               icon: replicator

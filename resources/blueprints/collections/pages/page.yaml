@@ -315,7 +315,7 @@ tabs:
               type: bard
               display: 'Aside Content'
               icon: bard
-              localizable: false
+              localizable: true
               listable: hidden
               instructions_position: above
               visibility: visible

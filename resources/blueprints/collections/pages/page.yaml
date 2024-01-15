@@ -4,6 +4,7 @@ tabs:
     sections:
       -
         display: 'Header Area'
+        instructions: 'Top Header and main content'
         fields:
           -
             handle: title
@@ -125,10 +126,11 @@ tabs:
               replicator_preview: true
               hide_display: false
       -
-        display: 'Footer Section'
+        display: 'Aside Section'
+        instructions: 'Additional Images and sponsor details'
         fields:
           -
-            handle: footer_image_stack
+            handle: divider_image_stack
             field:
               collapse: false
               previews: true
@@ -145,7 +147,7 @@ tabs:
                       icon: null
                       fields:
                         -
-                          handle: image
+                          handle: divider_image
                           field:
                             use_breakpoints: true
                             allow_ratio: true
@@ -154,7 +156,7 @@ tabs:
                             restrict: false
                             allow_uploads: true
                             type: responsive
-                            display: Image
+                            display: 'Divider Image'
                             icon: assets
                             localizable: false
                             listable: hidden
@@ -162,8 +164,14 @@ tabs:
                             visibility: visible
                             replicator_preview: true
                             hide_display: false
+                            breakpoints:
+                              - sm
+                              - md
+                              - lg
+                              - xl
+                              - 2xl
               type: replicator
-              display: 'Footer Image Stack'
+              display: 'Divider Image Stack'
               icon: replicator
               localizable: false
               listable: hidden
@@ -171,6 +179,7 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              instructions: 'this is a three (or more stack of images that separates top content area from the bottom sponsor content'
   sidebar:
     display: Sidebar
     sections:

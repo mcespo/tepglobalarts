@@ -23,7 +23,7 @@ return [
 
         'br' => [
             'name' => config('app.name').' Brasil',
-            'locale' => 'en_US',
+            'locale' => 'pt_BR',
             'url' => '/br/',
         ],
 

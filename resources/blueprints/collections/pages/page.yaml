@@ -41,7 +41,7 @@ tabs:
               type: bard
               display: 'Header Title'
               icon: bard
-              localizable: false
+              localizable: true
               listable: hidden
               instructions_position: above
               visibility: visible

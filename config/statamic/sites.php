@@ -21,5 +21,11 @@ return [
             'url' => '/',
         ],
 
+        'br' => [
+            'name' => config('app.name').' Brasil',
+            'locale' => 'en_US',
+            'url' => '/br/',
+        ],
+
     ],
 ];

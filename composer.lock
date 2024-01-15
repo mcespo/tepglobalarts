@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88337a197bd9098ea3816ea068857e9c",
+    "content-hash": "9c016aa013d8d4aad1d3369c42a1302b",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -5266,6 +5266,56 @@
             "time": "2022-06-01T11:28:41+00:00"
         },
         {
+            "name": "spatie/statamic-responsive-images",
+            "version": "v4.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/statamic-responsive-images.git",
+                "reference": "167d3c5e41a89cbb11181cf8d5917cba99735e5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/statamic-responsive-images/zipball/167d3c5e41a89cbb11181cf8d5917cba99735e5d",
+                "reference": "167d3c5e41a89cbb11181cf8d5917cba99735e5d",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "^4.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.9|^7.1",
+                "pestphp/pest": "^1.22",
+                "spatie/pest-plugin-snapshots": "^1.1"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Responsive Images",
+                    "description": "Responsive Images for Statamic 3"
+                },
+                "laravel": {
+                    "providers": [
+                        "Spatie\\ResponsiveImages\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\ResponsiveImages\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Responsive Images for Statamic 3",
+            "support": {
+                "issues": "https://github.com/spatie/statamic-responsive-images/issues",
+                "source": "https://github.com/spatie/statamic-responsive-images/tree/v4.1.1"
+            },
+            "time": "2023-07-23T19:07:15+00:00"
+        },
+        {
             "name": "statamic/cms",
             "version": "v4.42.1",
             "source": {
@@ -8728,6 +8778,56 @@
                 "source": "https://github.com/wilderborn/partyline/tree/1.0.2"
             },
             "time": "2022-12-14T18:38:34+00:00"
+        },
+        {
+            "name": "xndbogdan/statamic-bard-text-color",
+            "version": "v4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xndbogdan/statamic-bard-text-color.git",
+                "reference": "1829498b0e56d47a20e5808a9493f6d9dc67e99d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xndbogdan/statamic-bard-text-color/zipball/1829498b0e56d47a20e5808a9493f6d9dc67e99d",
+                "reference": "1829498b0e56d47a20e5808a9493f6d9dc67e99d",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "^4.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Statamic Bard Text Color",
+                    "description": "Text Color plugin for statamic bard"
+                },
+                "laravel": {
+                    "providers": [
+                        "XndBogdan\\BardTextColor\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "XndBogdan\\BardTextColor\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Statamic Bard Text Color",
+            "keywords": [
+                "bard",
+                "statamic",
+                "text-color"
+            ],
+            "support": {
+                "issues": "https://github.com/xndbogdan/statamic-bard-text-color/issues",
+                "source": "https://github.com/xndbogdan/statamic-bard-text-color/tree/v4.0.0"
+            },
+            "time": "2023-06-12T09:36:57+00:00"
         }
     ],
     "packages-dev": [

@@ -42,3 +42,5 @@ admin:
     - 'access search utility'
     - 'access email utility'
     - 'access licensing utility'
+    - 'access default site'
+    - 'access br site'

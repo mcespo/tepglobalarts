@@ -1,5 +1,20 @@
 title: Pages
+sites:
+  - default
+  - br
 structure:
-  root: true
+    root: true
 route: '{parent_uri}/{slug}'
 propagate: true
+revisions: false
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
+origin_behavior: active

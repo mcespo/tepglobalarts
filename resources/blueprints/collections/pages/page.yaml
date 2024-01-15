@@ -42,6 +42,7 @@ tabs:
                 - anchor
                 - image
                 - table
+                - color
               smart_typography: false
               save_html: false
               inline: false
